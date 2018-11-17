@@ -1,0 +1,1 @@
+parte importante sobre el carrito de compra

@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
+    <!-- AmazonArtesanías CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+
     <title>Métodos de pago</title>
   </head>
   <body>
@@ -24,13 +27,43 @@
               Aceptamos la mayoría de las tarjetas
             </div>
             <div class="payment-cards">
-              <img src="img/payment/accepted.png" alt="">
+              <img src="assets/img/payment/accepted.png" alt="">
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col">
             <!-- Inicia formulario -->
+            <form>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <label for="firstname">Nombre (s)</label>
+                  <input type="text" class="form-control text-uppercase" id="firstname"required>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <label for="lastname">Apellido (s)</label>
+                  <input type="text" class="form-control text-uppercase" id="lastname" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-8">
+                  <label for="phone">Número de tarjeta</label>
+                  <input type="text" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group col-12 col-md-4">
+                  <label for="email">Vencimiento</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-12 col-md-6">
+                  <button type="submit" name="button" class="btn btn-platzi">Guardar</button>
+                </div>
+                <div class="form-group col-12 col-md-6">
+                  <button type="submit" name="button" class="btn btn-platzi">Cancelar</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
